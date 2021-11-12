@@ -1,10 +1,10 @@
 async function selectionSort(arr){
     for(let i=0; i<arr.length; i++){
         let pos = i, min = parseInt(arr[i].style.height);
-        arr[i].style.background = "#EED6C4";
+        arr[i].style.background = "beige";
         for(let j=i+1; j<arr.length; j++){
             arr[j].style.background = "#BD8E83";
-            await waitforme(1);
+            await waitforme(1000);
             if(parseInt(arr[j].style.height) < min)
             {
                 if(pos !==i )
