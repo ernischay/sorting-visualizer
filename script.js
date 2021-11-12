@@ -1,4 +1,4 @@
-const listAlgorithm = ["Bubble"];
+const listAlgorithm = ["Bubble","Selection"];
 const arr = [];
 const btn = document.querySelector(".btn");
 
@@ -44,6 +44,11 @@ function main(){
             case 'Bubble':
                 toggleSortButton(true);
                 await bubbleSort(arr);
+                break;
+            case 'Selection':
+                toggleSortButton(true);
+                await selectionSort(arr);
+                break;
         }
     });
 }
