@@ -1,4 +1,4 @@
-const listAlgorithm = ["Bubble","Selection"];
+const listAlgorithm = ["Bubble", "Selection", "Insertion"];
 const arr = [];
 const btn = document.querySelector(".btn");
 
@@ -13,7 +13,7 @@ function createRandomArray(){
     }
 }
 
-async function waitforme(milisec)
+async function sleep(milisec)
 { 
     return new Promise(resolve => { 
         setTimeout(() => { resolve('') }, milisec); 
@@ -49,6 +49,10 @@ function main(){
                 toggleSortButton(true);
                 await selectionSort(arr);
                 break;
+            case 'Insertion':
+                toggleSortButton(true);
+                await insertionSort(arr);
+                break;   
         }
     });
 }

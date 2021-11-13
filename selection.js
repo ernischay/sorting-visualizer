@@ -4,7 +4,7 @@ async function selectionSort(arr){
         arr[i].style.background = "beige";
         for(let j=i+1; j<arr.length; j++){
             arr[j].style.background = "#BD8E83";
-            await waitforme(1000);
+            await sleep(100);
             if(parseInt(arr[j].style.height) < min)
             {
                 if(pos !==i )
