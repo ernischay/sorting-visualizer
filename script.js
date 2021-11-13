@@ -55,7 +55,8 @@ function main(){
                 break;
             case 'Merge':
                 toggleSortButton(true);
-                await mergeSort(arr);
+                console.log(arr.length);
+                await mergeSort(arr, 0, arr.length-1);
                 break; 
         }
     });
