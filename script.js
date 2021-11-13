@@ -1,4 +1,4 @@
-const listAlgorithm = ["Bubble", "Selection", "Insertion", "Merge"];
+const listAlgorithm = ["Quick","Bubble", "Selection", "Insertion", "Merge"];
 const arr = [];
 const btn = document.querySelector(".btn");
 
@@ -55,9 +55,12 @@ function main(){
                 break;
             case 'Merge':
                 toggleSortButton(true);
-                console.log(arr.length);
                 await mergeSort(arr, 0, arr.length-1);
                 break; 
+            case 'Quick':
+                toggleSortButton(true);
+                await quickSort(arr, 0, arr.length-1);
+                break;
         }
     });
 }
