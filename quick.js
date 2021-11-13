@@ -14,7 +14,7 @@ async function partition(arr, low, high){
     }
     arr[high].style.background = "beige";
     await sleep(50);
-    [arr[i+1].style.height,arr[high].style.height] = [arr[high].style.height,arr[i+1].style.height]
+    [arr[i+1].style.height,arr[high].style.height] = [arr[high].style.height,arr[i+1].style.height];
     return i+1;
 }
 
