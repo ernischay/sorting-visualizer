@@ -1,4 +1,4 @@
-const listAlgorithm = ["Bubble", "Selection", "Insertion"];
+const listAlgorithm = ["Bubble", "Selection", "Insertion", "Merge"];
 const arr = [];
 const btn = document.querySelector(".btn");
 
@@ -52,7 +52,11 @@ function main(){
             case 'Insertion':
                 toggleSortButton(true);
                 await insertionSort(arr);
-                break;   
+                break;
+            case 'Merge':
+                toggleSortButton(true);
+                await mergeSort(arr);
+                break; 
         }
     });
 }
