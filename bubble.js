@@ -8,7 +8,7 @@ async function bubbleSort(arr)
             arr[j+1].style.background="#BD8E83";
             if(parseInt(arr[j].style.height) > parseInt(arr[j+1].style.height))
               {
-                await sleep(1);
+                await sleep(1000);
                 [arr[j].style.height, arr[j+1].style.height] = [arr[j+1].style.height, arr[j].style.height];
               }
             arr[j].style.background="beige";

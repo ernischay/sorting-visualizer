@@ -1,7 +1,7 @@
 async function insertionSort(arr){
     for(let i=1; i<arr.length; i++){
         let j=i;
-        await sleep(100);
+        await sleep(50);
         while(j>0 && parseInt(arr[j-1].style.height) > parseInt(arr[j].style.height))
         {
             arr[j].style.background = "#BD8E83";
