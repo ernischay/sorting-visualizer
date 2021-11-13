@@ -1,4 +1,4 @@
-const listAlgorithm = ["Quick","Bubble", "Selection", "Insertion", "Merge"];
+const listAlgorithm = ["Bubble", "Selection", "Insertion", "Merge", "Quick"];
 const arr = [];
 const btn = document.querySelector(".btn");
 
